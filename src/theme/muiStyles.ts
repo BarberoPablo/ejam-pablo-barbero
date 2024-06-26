@@ -3,6 +3,8 @@ declare module "@mui/material/styles" {
   interface TypographyVariantsOptions {
     text: React.CSSProperties;
     header: React.CSSProperties;
+    title: React.CSSProperties;
+    "sub-title": React.CSSProperties;
   }
 }
 
@@ -11,6 +13,8 @@ declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     text: true;
     header: true;
+    title: true;
+    "sub-title": true;
   }
 }
 
