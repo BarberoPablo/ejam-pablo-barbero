@@ -3,8 +3,5 @@
 }
 
 body {
-  margin: 0 auto;
-  display: flex;
-  place-items: center;
-  max-width: 1245px;
+  margin: 0;
 }
