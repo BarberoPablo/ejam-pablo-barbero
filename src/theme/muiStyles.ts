@@ -5,6 +5,7 @@ declare module "@mui/material/styles" {
     header: React.CSSProperties;
     title: React.CSSProperties;
     "sub-title": React.CSSProperties;
+    step: React.CSSProperties;
   }
 }
 
@@ -15,6 +16,7 @@ declare module "@mui/material/Typography" {
     header: true;
     title: true;
     "sub-title": true;
+    step: true;
   }
 }
 
