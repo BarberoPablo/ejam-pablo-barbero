@@ -1,7 +1,7 @@
 import { Box, Stack, Theme, Typography, useMediaQuery } from "@mui/material";
-import star from "../../../assets/icons/star.svg";
-import { specialPromo } from "../../../utils/constants";
 import tick from "../../../assets/icons/tick-rounded.svg";
+import RatingStars from "../../../components/RatingStars";
+import { specialPromo } from "../../../utils/constants";
 
 export default function PromoDetails() {
   const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
@@ -27,13 +27,8 @@ export default function PromoDetails() {
             </Stack>
           </Stack>
 
-          <Stack sx={{ flexDirection: "row" }}>
-            {Array.from({ length: specialPromo.rating }).map((_, index) => (
-              <Box key={"star" + index} sx={{ width: 18, height: 18 }}>
-                <img src={star} alt={`rating star ${index}`} />
-              </Box>
-            ))}
-          </Stack>
+          <RatingStars number={specialPromo.rating} />
+
           <Stack sx={{ flexDirection: "row", alignItems: "center", mt: 1.25, gap: 2 }}>
             <Box sx={{ width: 16, height: 16, boxSizing: "border-box", borderRadius: "50%", backgroundColor: "#2C7EF8", border: `4px solid #E3EEFF` }} />
             <Typography variant="text" sx={{ color: "#37465A" }}>
