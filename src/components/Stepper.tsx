@@ -12,7 +12,7 @@ export default function Stepper({ step }: { step: number }) {
         activeStep={step}
         connector={null}
         alternativeLabel={isMobile ? true : false}
-        sx={{ justifyContent: "space-between", mt: isMobile ? 4 : 6 }}
+        sx={{ justifyContent: "space-between", mt: isMobile ? 4 : 7 }}
       >
         {steps.map((label, index) => {
           const completed = step > index;
@@ -46,7 +46,7 @@ export default function Stepper({ step }: { step: number }) {
                 }}
                 style={{ margin: 0 }}
               >
-                <Typography variant="step" sx={{ fontWeight: step === index ? 800 : "inherit" }}>
+                <Typography variant="step" sx={{ fontWeight: step === index ? 800 : "inherit", ml: 1.5 }}>
                   {isMobile ? parseStepText(label) : label}
                 </Typography>
               </StepLabel>

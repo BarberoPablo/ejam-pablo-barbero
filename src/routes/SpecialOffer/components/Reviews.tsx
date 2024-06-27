@@ -31,7 +31,7 @@ export default function Reviews() {
           </Stack>
         </Stack>
 
-        <Stack>
+        <Stack sx={{ mt: 2.25 }}>
           <Typography variant="text" sx={{}}>
             {review.comment}
           </Typography>

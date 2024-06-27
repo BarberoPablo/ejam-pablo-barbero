@@ -8,7 +8,7 @@ export default function PromoDetails() {
 
   return (
     <>
-      <Stack sx={{ flexDirection: "row", mt: 4, gap: 3, justifyContent: "space-between" }}>
+      <Stack sx={{ flexDirection: "row", mt: 2.5, gap: 3, justifyContent: "space-between" }}>
         <Box sx={{ backgroundColor: "#2c7ef8", width: { xs: 80, md: 134 }, height: { xs: 80, md: 134 }, borderRadius: 2.5 }}>
           <img
             src={specialPromo["secondary-image"]}

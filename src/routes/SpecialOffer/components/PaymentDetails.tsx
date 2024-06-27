@@ -17,6 +17,7 @@ export default function PaymentDetails() {
         borderRadius: 1,
         px: 2,
         py: { xs: 1, md: 1.25 },
+        boxSizing: "border-box",
       }}
     >
       <Stack sx={{ flexDirection: "row", height: "100%", alignItems: "center" }}>

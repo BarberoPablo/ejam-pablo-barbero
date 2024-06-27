@@ -14,7 +14,7 @@ export default function Banner() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#252F3D", alignItems: "center" }}>
+    <AppBar elevation={0} position="static" sx={{ backgroundColor: "#252F3D", alignItems: "center" }}>
       {isMobile ? (
         <Stack sx={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", width: "100%", height: 42 }}>
           <IconButton sx={{ width: 20, height: 20, ml: 2.5 }} onClick={() => handleChangeIndex(-1)}>

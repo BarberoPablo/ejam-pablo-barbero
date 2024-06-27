@@ -26,7 +26,7 @@ export default function Discount() {
       </Paper>
 
       <Button
-        sx={{ mt: 3, backgroundColor: "#59ae43", color: "white", borderRadius: 12.5, height: 59 }}
+        sx={{ mt: 4, backgroundColor: "#59ae43", color: "white", borderRadius: 12.5, height: 59 }}
         endIcon={<img src={arrowRight} alt="arrow right icon" />}
       >
         <Typography sx={{ fontSize: { xs: 19, md: 27 } }}>

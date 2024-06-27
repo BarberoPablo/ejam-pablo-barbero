@@ -30,7 +30,7 @@ export default function OfferInformation() {
 
             <PaymentDetails />
 
-            <Stack sx={{ mt: { xs: 1.5, md: 2.5 } }}>
+            <Stack sx={{ mt: { xs: 1.5, md: 1.875 } }}>
               <Button variant="text" sx={{ color: "#F82C2C" }}>
                 <Typography sx={{ textDecoration: "underline", fontSize: { xs: 12, md: 18 } }}>No thanks, I don't want this.</Typography>
               </Button>

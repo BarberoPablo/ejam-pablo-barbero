@@ -9,7 +9,7 @@ export default function Sponsors() {
   return (
     <Stack sx={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", mt: isMobile ? 2.5 : 4 }}>
       <img src={clarifion} alt="clarifon logo" width={isMobile ? 107 : 192} />
-      <Stack sx={{ flexDirection: "row" }}>
+      <Stack sx={{ flexDirection: "row", gap: 4 }}>
         <img src={mcafee} alt="mcafee logo" width={isMobile ? 44 : 88} />
         <img src={norton} alt="norton logo" width={isMobile ? 41 : 82} />
       </Stack>
