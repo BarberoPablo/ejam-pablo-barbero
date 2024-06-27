@@ -24,7 +24,7 @@ export default function Reviews() {
                   <img src={verified} alt="verified icon" width={16} height={16} />
                 </Stack>
               ) : null}
-              <Typography variant="header" sx={{ color: "#5BB59A" }}>
+              <Typography variant="header" sx={{ color: "#5BB59A", textTransform: "none" }}>
                 Verified Customer
               </Typography>
             </Stack>
@@ -32,9 +32,7 @@ export default function Reviews() {
         </Stack>
 
         <Stack sx={{ mt: 2.25 }}>
-          <Typography variant="text" sx={{}}>
-            {review.comment}
-          </Typography>
+          <Typography variant="text">{review.comment}</Typography>
         </Stack>
       </Stack>
     </Paper>

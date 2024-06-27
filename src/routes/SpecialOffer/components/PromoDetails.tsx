@@ -36,13 +36,19 @@ export default function PromoDetails() {
             </Typography>
           </Stack>
 
-          <Typography variant="text" sx={{ mt: 1.25, textAlign: { xs: "center", md: "inherit" } }}>
-            {specialPromo.description}
-          </Typography>
+          {isMobile ? null : (
+            <Typography variant="text" sx={{ mt: 1.25 }}>
+              {specialPromo.description}
+            </Typography>
+          )}
         </Stack>
       </Stack>
-
-      <Stack sx={{ mt: 4, rowGap: 2 }}>
+      {isMobile ? (
+        <Typography variant="text" sx={{ display: "flex", mt: 1.25, textAlign: "center" }}>
+          {specialPromo.description}
+        </Typography>
+      ) : null}
+      <Stack sx={{ mt: { xs: 3, md: 4 }, rowGap: 2 }}>
         {specialPromo.perks.map((perk) => (
           <Stack key={perk} sx={{ flexDirection: "row", gap: 1.5 }}>
             <img src={tick} alt="tick icon" />

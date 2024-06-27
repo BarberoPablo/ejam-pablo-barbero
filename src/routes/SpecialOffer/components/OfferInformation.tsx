@@ -12,15 +12,23 @@ export default function OfferInformation() {
 
   return (
     <Paper elevation={0} sx={{ backgroundColor: { xs: "inherit", md: "#FAFAFA" }, p: { xs: 0, md: 5 }, mt: { xs: 3, md: 6.25 } }}>
-      <Grid container spacing={5}>
+      <Grid container spacing={isMobile ? 0 : 5}>
         <Grid item xs={12} md={6}>
           <Box sx={{ width: { md: 575 } }}>
             {isMobile ? <OfferTitle /> : null}
-            <img src={specialPromo["main-image"]} width={isMobile ? 320 : 575} height={isMobile ? 328 : 591} alt={"special promo main image"} />
+            <img
+              src={specialPromo["main-image"]}
+              alt={"special promo main image"}
+              style={{
+                width: isMobile ? "100%" : 575,
+                height: isMobile ? "100%" : 591,
+                marginTop: isMobile ? "24px" : 0,
+              }}
+            />
             {isMobile ? null : <Reviews />}
           </Box>
         </Grid>
-        <Grid item xs={12} md={6} mt={isMobile ? 3 : 0}>
+        <Grid item xs={12} md={6}>
           <Box sx={{ width: { md: 550 } }}>
             {isMobile ? null : <OfferTitle />}
 
