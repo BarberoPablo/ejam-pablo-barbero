@@ -29,7 +29,7 @@ export default function Discount() {
         sx={{ mt: 3, backgroundColor: "#59ae43", color: "white", borderRadius: 12.5, height: 59 }}
         endIcon={<img src={arrowRight} alt="arrow right icon" />}
       >
-        <Typography sx={{ fontSize: { sx: 19, md: 27 } }}>
+        <Typography sx={{ fontSize: { xs: 19, md: 27 } }}>
           <b>Yes - claim my discount</b>
         </Typography>
       </Button>

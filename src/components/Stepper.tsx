@@ -12,7 +12,7 @@ export default function Stepper({ step }: { step: number }) {
         activeStep={step}
         connector={null}
         alternativeLabel={isMobile ? true : false}
-        sx={{ justifyContent: "space-between", mt: isMobile ? 4 : 7 }}
+        sx={{ justifyContent: "space-between", mt: isMobile ? 4 : 6 }}
       >
         {steps.map((label, index) => {
           const completed = step > index;
