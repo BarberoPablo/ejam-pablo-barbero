@@ -13,9 +13,9 @@ export default function Sponsors() {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
-          height: { xs: 60, md: "auto" },
+          height: { xs: 60, lg: "auto" },
           mt: isMobile ? 2.5 : 4,
-          px: { xs: 2.5, md: 0 },
+          px: { xs: 2.5, lg: 0 },
         }}
       >
         <img src={clarifion} alt="clarifon logo" width={isMobile ? 107 : 192} />

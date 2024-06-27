@@ -9,7 +9,7 @@ export default function PromoDetails() {
   return (
     <>
       <Stack sx={{ flexDirection: "row", mt: 2.5, gap: 3, justifyContent: "space-between" }}>
-        <Box sx={{ backgroundColor: "#2c7ef8", width: { xs: 80, md: 134 }, height: { xs: 80, md: 134 }, borderRadius: 2.5 }}>
+        <Box sx={{ backgroundColor: "#2c7ef8", width: { xs: 80, lg: 134 }, height: { xs: 80, lg: 134 }, borderRadius: 2.5 }}>
           <img
             src={specialPromo["secondary-image"]}
             alt={"special promo secondary image"}
@@ -48,7 +48,7 @@ export default function PromoDetails() {
           {specialPromo.description}
         </Typography>
       ) : null}
-      <Stack sx={{ mt: { xs: 3, md: 4 }, rowGap: 2 }}>
+      <Stack sx={{ mt: { xs: 3, lg: 4 }, rowGap: 2 }}>
         {specialPromo.perks.map((perk) => (
           <Stack key={perk} sx={{ flexDirection: "row", gap: 1.5 }}>
             <img src={tick} alt="tick icon" />

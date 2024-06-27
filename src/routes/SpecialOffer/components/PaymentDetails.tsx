@@ -8,15 +8,15 @@ export default function PaymentDetails() {
   return (
     <Stack
       sx={{
-        flexDirection: { xs: "column", md: "row" },
-        height: { xs: 71, md: 33 },
+        flexDirection: { xs: "column", lg: "row" },
+        height: { xs: 71, lg: 33 },
         mt: 1.5,
         alignItems: "center",
         justifyContent: "space-between",
         border: "1px solid #CFCFCF",
         borderRadius: 1,
         px: 2,
-        py: { xs: 1, md: 1.25 },
+        py: { xs: 1, lg: 1.25 },
         boxSizing: "border-box",
       }}
     >
