@@ -8,12 +8,12 @@ import ReturnPolicy from "./ReturnPolicy";
 import Reviews from "./Reviews";
 
 export default function OfferInformation() {
-  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("lg"));
 
   return (
     <Paper elevation={0} sx={{ backgroundColor: { xs: "inherit", md: "#FAFAFA" }, p: { xs: 0, md: 5 }, mt: { xs: 3, md: 6.25 } }}>
       <Grid container spacing={isMobile ? 0 : 5}>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} lg={6}>
           <Box sx={{ width: { md: 575 } }}>
             {isMobile ? <OfferTitle /> : null}
             <img
@@ -28,7 +28,7 @@ export default function OfferInformation() {
             {isMobile ? null : <Reviews />}
           </Box>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} lg={6}>
           <Box sx={{ width: { md: 550 } }}>
             {isMobile ? null : <OfferTitle />}
 

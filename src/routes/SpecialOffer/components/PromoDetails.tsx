@@ -4,7 +4,7 @@ import RatingStars from "../../../components/RatingStars";
 import { specialPromo } from "../../../utils/constants";
 
 export default function PromoDetails() {
-  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("lg"));
 
   return (
     <>

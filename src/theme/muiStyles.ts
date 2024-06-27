@@ -40,7 +40,7 @@ export const theme = createTheme({
     text: {
       color: "#4D5254",
       fontSize: 16,
-      [breakpoints.down("md")]: {
+      [breakpoints.down("lg")]: {
         fontSize: 12,
       },
     },
@@ -53,35 +53,35 @@ export const theme = createTheme({
       color: "black",
       fontSize: 48,
       textTransform: "capitalize",
-      [breakpoints.down("md")]: {
+      [breakpoints.down("lg")]: {
         fontSize: 32,
       },
     },
     "big-sub-title": {
       color: "#4D5254",
       fontSize: 24,
-      [breakpoints.down("md")]: {
+      [breakpoints.down("lg")]: {
         fontSize: 16,
       },
     },
     step: {
       color: "black",
       fontSize: 20,
-      [breakpoints.down("md")]: {
+      [breakpoints.down("lg")]: {
         fontSize: 12,
       },
     },
     "mid-title": {
       color: "black",
       fontSize: 32,
-      [breakpoints.down("md")]: {
+      [breakpoints.down("lg")]: {
         fontSize: 24,
       },
     },
     "mid-sub-title": {
       color: "black",
       fontSize: 20,
-      [breakpoints.down("md")]: {
+      [breakpoints.down("lg")]: {
         fontSize: 14,
       },
     },
@@ -89,14 +89,14 @@ export const theme = createTheme({
       color: "#969696",
       fontSize: 16,
       textDecoration: "line-through",
-      [breakpoints.down("md")]: {
+      [breakpoints.down("lg")]: {
         fontSize: 10,
       },
     },
     "blue-text": {
       color: "#2C7EF8",
       fontSize: 22,
-      [breakpoints.down("md")]: {
+      [breakpoints.down("lg")]: {
         fontSize: 14,
       },
     },

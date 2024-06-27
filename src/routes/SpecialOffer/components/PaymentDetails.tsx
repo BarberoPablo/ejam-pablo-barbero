@@ -3,7 +3,7 @@ import lock from "../../../assets/icons/lock.svg";
 import { paymentMethods } from "../../../utils/constants";
 
 export default function PaymentDetails() {
-  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("lg"));
 
   return (
     <Stack

@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function Banner() {
   const [index, setIndex] = useState(0);
-  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("lg"));
 
   const handleChangeIndex = (number: number) => {
     setIndex((prevState) => (prevState + number + bannerData.length) % bannerData.length);

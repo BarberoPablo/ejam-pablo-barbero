@@ -4,7 +4,7 @@ import mcafee from "../assets/companies/mcafee.svg";
 import norton from "../assets/companies/norton.svg";
 
 export default function Sponsors() {
-  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("lg"));
 
   return (
     <Stack sx={{ backgroundColor: "white" }}>
