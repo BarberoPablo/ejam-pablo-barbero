@@ -4,7 +4,7 @@ import mcafee from "../assets/companies/mcafee.svg";
 import norton from "../assets/companies/norton.svg";
 
 export default function Sponsors() {
-  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("lg"));
 
   return (
     <Stack sx={{ backgroundColor: "white" }}>
@@ -13,9 +13,9 @@ export default function Sponsors() {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
-          height: { xs: 60, md: "auto" },
+          height: { xs: 60, lg: "auto" },
           mt: isMobile ? 2.5 : 4,
-          px: { xs: 2.5, md: 0 },
+          px: { xs: 2.5, lg: 0 },
         }}
       >
         <img src={clarifion} alt="clarifon logo" width={isMobile ? 107 : 192} />

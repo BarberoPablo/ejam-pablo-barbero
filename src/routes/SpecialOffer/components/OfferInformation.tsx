@@ -8,13 +8,13 @@ import ReturnPolicy from "./ReturnPolicy";
 import Reviews from "./Reviews";
 
 export default function OfferInformation() {
-  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("lg"));
 
   return (
-    <Paper elevation={0} sx={{ backgroundColor: { xs: "inherit", md: "#FAFAFA" }, p: { xs: 0, md: 5 }, mt: { xs: 3, md: 6.25 } }}>
+    <Paper elevation={0} sx={{ backgroundColor: { xs: "inherit", lg: "#FAFAFA" }, p: { xs: 0, lg: 5 }, mt: { xs: 3, lg: 6.25 } }}>
       <Grid container spacing={isMobile ? 0 : 5}>
-        <Grid item xs={12} md={6}>
-          <Box sx={{ width: { md: 575 } }}>
+        <Grid item xs={12} lg={6}>
+          <Box sx={{ width: { lg: 575 } }}>
             {isMobile ? <OfferTitle /> : null}
             <img
               src={specialPromo["main-image"]}
@@ -28,8 +28,8 @@ export default function OfferInformation() {
             {isMobile ? null : <Reviews />}
           </Box>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <Box sx={{ width: { md: 550 } }}>
+        <Grid item xs={12} lg={6}>
+          <Box sx={{ width: { lg: 550 } }}>
             {isMobile ? null : <OfferTitle />}
 
             <PromoDetails />
@@ -38,9 +38,9 @@ export default function OfferInformation() {
 
             <PaymentDetails />
 
-            <Stack sx={{ mt: { xs: 1.5, md: 1.875 } }}>
+            <Stack sx={{ mt: { xs: 1.5, lg: 1.875 } }}>
               <Button variant="text" sx={{ color: "#F82C2C" }}>
-                <Typography sx={{ textDecoration: "underline", fontSize: { xs: 12, md: 18 } }}>No thanks, I don't want this.</Typography>
+                <Typography sx={{ textDecoration: "underline", fontSize: { xs: 12, lg: 18 } }}>No thanks, I don't want this.</Typography>
               </Button>
             </Stack>
 

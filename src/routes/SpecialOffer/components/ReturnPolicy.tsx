@@ -2,7 +2,7 @@ import { Stack, Theme, Typography, useMediaQuery } from "@mui/material";
 import returnPolicy from "../../../assets/icons/satisfaction-guarantee.png";
 
 export default function ReturnPolicy() {
-  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("lg"));
 
   return (
     <Stack sx={{ flexDirection: "row", gap: 2, mt: 3 }}>

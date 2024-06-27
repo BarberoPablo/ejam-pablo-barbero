@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function Banner() {
   const [index, setIndex] = useState(0);
-  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("lg"));
 
   const handleChangeIndex = (number: number) => {
     setIndex((prevState) => (prevState + number + bannerData.length) % bannerData.length);
@@ -36,7 +36,7 @@ export default function Banner() {
           </IconButton>
         </Stack>
       ) : (
-        <Stack sx={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", width: 1245, height: 50 }}>
+        <Stack sx={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", maxWidth: 1245, width: "100%", height: 50 }}>
           {bannerData?.length > 0
             ? bannerData.map((service) => (
                 <Stack

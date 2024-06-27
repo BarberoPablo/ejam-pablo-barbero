@@ -4,7 +4,7 @@ import { Theme, useTheme } from "@mui/material/styles";
 
 export default function Stepper({ step }: { step: number }) {
   const theme = useTheme();
-  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down("lg"));
 
   return (
     <>
@@ -23,7 +23,7 @@ export default function Stepper({ step }: { step: number }) {
               key={label + "step"}
               sx={{
                 p: 0,
-                display: "flex",
+                //display: "flex",
                 "& .MuiStepLabel-label": {
                   margin: 0,
                 },
@@ -47,7 +47,7 @@ export default function Stepper({ step }: { step: number }) {
                 }}
                 style={{ margin: 0 }}
               >
-                <Typography variant="step" sx={{ fontWeight: step === index ? 800 : "inherit", ml: { xs: 0, md: 1.5 } }}>
+                <Typography variant="step" sx={{ fontWeight: step === index ? 800 : "inherit", ml: { xs: 0, lg: 1.5 } }}>
                   {isMobile ? parseStepText(label) : label}
                 </Typography>
               </StepLabel>
