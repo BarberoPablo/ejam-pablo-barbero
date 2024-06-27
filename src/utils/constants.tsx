@@ -1,9 +1,8 @@
+import client1 from "../assets/clients/client1.png";
 import spiralArrow from "../assets/icons/arrow-sync.svg";
 import checkmark from "../assets/icons/checkmark.svg";
 import heart from "../assets/icons/heart-outline.svg";
 import truck from "../assets/icons/truck-light.svg";
-import mainPromo from "../assets/products/promo-main.png";
-import secondaryPromo from "../assets/products/promo-secondary.png";
 import amex from "../assets/paymentMethods/amex.svg";
 import applePay from "../assets/paymentMethods/apple-pay.svg";
 import gpay from "../assets/paymentMethods/gpay.svg";
@@ -11,8 +10,10 @@ import mastercard from "../assets/paymentMethods/mastercard.svg";
 import paypal from "../assets/paymentMethods/paypal.svg";
 import shopPay from "../assets/paymentMethods/shop-pay.svg";
 import visa from "../assets/paymentMethods/visa.svg";
+import mainPromo from "../assets/products/promo-main.png";
+import secondaryPromo from "../assets/products/promo-secondary.png";
 
-export const usps = [
+export const bannerData = [
   { logo: checkmark, text: "30-Day Satisfaction Guarantee" },
   { logo: truck, text: "Free delivery on orders over $40.00" },
   { logo: heart, text: "50.000+ Happy Customers" },
@@ -34,6 +35,16 @@ export const specialPromo = {
     "Negative Ion Technology may <b>help with allergens</b>",
     "Designed for <b>air rejuvenation</b>",
     `<b>Perfect for every</b> room in all types of places.`,
+  ],
+  reviews: [
+    {
+      image: client1,
+      rating: 5,
+      name: "Ken T.",
+      verified: true,
+      comment:
+        "“As soon as the Clarifions arrived I put one in my bedroom. This was late in the afternoon. When I went to the bedroom in the evening it smelled clean. When I went to bed I felt I could breathe better. Wonderful.”",
+    },
   ],
 };
 
