@@ -1,9 +1,10 @@
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Banner from "./components/Banner.tsx";
 import "./index.css";
-import Usps from "./components/Usps.tsx";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import SpecialOffer from "./routes/SpecialOffer/";
+import Footer from "./components/Footer.tsx";
 
 const defaultTheme = createTheme({});
 
@@ -15,13 +16,16 @@ const theme = createTheme({
     text: {
       color: "#4D5254",
       fontSize: 16,
+      [breakpoints.down("md")]: {
+        fontSize: 12,
+      },
     },
     header: {
       color: "white",
       textTransform: "uppercase",
       fontSize: 12,
     },
-    title: {
+    "big-title": {
       color: "black",
       fontSize: 48,
       textTransform: "capitalize",
@@ -29,7 +33,7 @@ const theme = createTheme({
         fontSize: 32,
       },
     },
-    "sub-title": {
+    "big-sub-title": {
       color: "#4D5254",
       fontSize: 24,
       [breakpoints.down("md")]: {
@@ -43,14 +47,45 @@ const theme = createTheme({
         fontSize: 12,
       },
     },
+    "mid-title": {
+      color: "black",
+      fontSize: 32,
+      [breakpoints.down("md")]: {
+        fontSize: 24,
+      },
+    },
+    "mid-sub-title": {
+      color: "black",
+      fontSize: 20,
+      [breakpoints.down("md")]: {
+        fontSize: 14,
+      },
+    },
+    "crossed-text": {
+      color: "#969696",
+      fontSize: 16,
+      textDecoration: "line-through",
+      [breakpoints.down("md")]: {
+        fontSize: 10,
+      },
+    },
+    "blue-text": {
+      color: "#2C7EF8",
+      fontSize: 22,
+      [breakpoints.down("md")]: {
+        fontSize: 14,
+      },
+    },
   },
 });
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <Usps />
+      {/* isMobile in context or zustand */}
+      <Banner />
       <SpecialOffer />
+      <Footer />
     </ThemeProvider>
   </React.StrictMode>
 );
