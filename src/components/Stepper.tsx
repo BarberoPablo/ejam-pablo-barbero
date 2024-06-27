@@ -26,6 +26,7 @@ export default function Stepper({ step }: { step: number }) {
                 //display: "flex",
                 "& .MuiStepLabel-label": {
                   margin: 0,
+                  padding: 0,
                 },
                 "& .MuiStepIcon-text": {
                   fill: incompleted ? theme.palette.primary.main : "white",
