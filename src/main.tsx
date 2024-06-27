@@ -15,6 +15,9 @@ const theme = createTheme({
     text: {
       color: "#4D5254",
       fontSize: 16,
+      [breakpoints.down("md")]: {
+        fontSize: 12,
+      },
     },
     header: {
       color: "white",
