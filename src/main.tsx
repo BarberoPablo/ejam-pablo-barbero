@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import Banner from "./components/Banner.tsx";
 import "./index.css";
 import SpecialOffer from "./routes/SpecialOffer/";
+import Footer from "./components/Footer.tsx";
 
 const defaultTheme = createTheme({});
 
@@ -84,6 +85,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       {/* isMobile in context or zustand */}
       <Banner />
       <SpecialOffer />
+      <Footer />
     </ThemeProvider>
   </React.StrictMode>
 );
