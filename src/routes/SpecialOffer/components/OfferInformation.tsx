@@ -1,8 +1,8 @@
-import { Grid, Paper, Stack, Theme, Typography, useMediaQuery } from "@mui/material";
-import tick from "../../../assets/icons/tick-rounded.svg";
+import { Grid, Paper, Theme, useMediaQuery } from "@mui/material";
 import { specialPromo } from "../../../utils/constants";
 import Discount from "./Discount";
 import OfferTitle from "./OfferTitle";
+import PaymentDetails from "./PaymentDetails";
 import PromoDetails from "./PromoDetails";
 
 export default function OfferInformation() {
@@ -20,16 +20,9 @@ export default function OfferInformation() {
 
           <PromoDetails />
 
-          <Stack sx={{ mt: 4, rowGap: 2 }}>
-            {specialPromo.perks.map((perk) => (
-              <Stack key={perk} sx={{ flexDirection: "row", gap: 1.5 }}>
-                <img src={tick} alt="tick icon" />
-                <Typography variant="text" dangerouslySetInnerHTML={{ __html: perk }} />
-              </Stack>
-            ))}
-          </Stack>
-
           <Discount />
+
+          <PaymentDetails />
         </Grid>
       </Grid>
     </Paper>

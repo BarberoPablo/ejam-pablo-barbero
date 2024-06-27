@@ -4,6 +4,13 @@ import heart from "../assets/icons/heart-outline.svg";
 import truck from "../assets/icons/truck-light.svg";
 import mainPromo from "../assets/products/promo-main.png";
 import secondaryPromo from "../assets/products/promo-secondary.png";
+import amex from "../assets/paymentMethods/amex.svg";
+import applePay from "../assets/paymentMethods/apple-pay.svg";
+import gpay from "../assets/paymentMethods/gpay.svg";
+import mastercard from "../assets/paymentMethods/mastercard.svg";
+import paypal from "../assets/paymentMethods/paypal.svg";
+import shopPay from "../assets/paymentMethods/shop-pay.svg";
+import visa from "../assets/paymentMethods/visa.svg";
 
 export const usps = [
   { logo: checkmark, text: "30-Day Satisfaction Guarantee" },
@@ -29,6 +36,8 @@ export const specialPromo = {
     `<b>Perfect for every</b> room in all types of places.`,
   ],
 };
+
+export const paymentMethods = [amex, applePay, gpay, mastercard, paypal, shopPay, visa];
 
 export function parseStepText(text: string) {
   return text.split(": ")[1];
