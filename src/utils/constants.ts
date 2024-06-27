@@ -9,3 +9,9 @@ export const usps = [
   { logo: heart, text: "50.000+ Happy Customers" },
   { logo: spiralArrow, text: "100% Money Back Guarantee" },
 ];
+
+export const steps = ["Step 1 : Cart Review", "Step 2 : Checkout", "Step 3 : Special Offer", "Step 4 : Confirmation"];
+
+export function parseStepText(text: string) {
+  return text.split(": ")[1];
+}
